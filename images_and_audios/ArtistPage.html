@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="artist.css">
+
+  <title>BeatPulse - {{ artistName }}</title>
+</head>
+<body>
+  <header>
+    <h1 class="artist-heading">{{ artistName }}</h1>
+    <div class="artist-image">
+      <img src="{{ artistImage }}" alt="Artist Image" id="artistImage">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#Playlists">Playlists</a></li>
+        <li><a href="#Discography">Discography</a></li>
+        <li><a href="#MusicVideos">Music Videos</a></li>
+        <li><a href="#Bios">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="margin-top: 20px;">
+    <section id="Playlists">
+
+      <h2>Playlists</h2>
+      <div id="PlaylistMusic">
+        <ul class="playlistlist">
+          </ul>
+      </div>
+    </section>
+
+    <section id="Discography">
+      <h2>Discography</h2>
+
+      <div class="album-grid">
+        </div>
+    </section>
+
+    
+
+    <section id="Bios">
+      <h2>About</h2>
+      <p id="artistBio">{{ artistBio }}</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footerCopyright"></span> {{ artistName }}</p>
+  </footer>
+</body>
+<script src="artist.js"></script>
+</html>

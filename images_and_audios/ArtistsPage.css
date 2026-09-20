@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Maintains flexbox layout */
+ 
+}
+
+/* Header styling */
+header {
+  background-color: #282828;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navigation a:hover {
+  background-color: #1a1a1a;
+  transition: background-color 0.3s ease;
+}
+
+.album-grid {
+    display: flex; /* Allow albums to sit next to each other */
+    flex-wrap: wrap; /* Wrap albums to the next line if needed */
+    /* Removed justify-content: space-between; to avoid extra space */
+    gap: 80px; /* Reduce space between albums */
+    padding-left:150px;
+    padding-top: 200px;
+  }
+  
+  .album-grid img {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+  }
+  .album {
+    display: flex; /* Allow elements to sit next to each other */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-right: 10px; /* Adjust margin for spacing (optional) */
+  }
+  
+  .album img {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    /* Optional styles for image margins/padding */
+  }
+  
+  .album-title {
+    margin-top: 5px; /* Add space above album title */
+    font-weight: bold;
+  } 
+   
+  
+.sassy-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Shadows Into Light', cursive; /* A sassy cursive font */
+    font-size: 48px; /* Adjust font size as needed */
+    color:#343a40; /* Light color for better visibility */
+    text-align: center; /* Center align the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+  }
+  footer {
+    background-color: #292929; /* Darker gray for footer */
+    text-align: center; /* Center copyright text */
+  }

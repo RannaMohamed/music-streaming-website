@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+       <link href="Content/bootstrap.min.css" rel="stylesheet" href=bootstrap.bundle.min.js/>
+          
+
+</head> 
+<body>
+
+   
+    <!--dropdown menu-->
+
+  
+<!--second form-->
+    
+        
+       <!------------------------------------------------------------------------------------------------------------>
+                
+  <header class="header">
+    <div class="logo">
+      <h1>BeatPulse</h1>
+    </div>
+
+    <nav class="navigation">
+        <a href="TrialMusic .html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="review.html">Reviews</a>
+        <a href="ArtistsPages.html">Artists</a>
+        <div class="btn-group">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            GENRE
+          </button>
+          <ul class="dropdown-menu bg-dark text-white">
+            <li><a class="dropdown-item" data-genre="Pop" href="#">Pop</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" data-genre="Rock" href="#">Rock</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" data-genre="Rap" href="#">Rap</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" data-genre="Electronic" href="#">Electronic</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item"data-genre="Country" href="#">Country</a></li>
+          </ul>
+        </div>
+    </nav> 
+  </header>
+
+
+  <main class="main">
+    <div class="filtered-songs"></div>
+    <div id="songs-container"  >
+    </div>
+     <div class="content-wrapper">
+
+    <div class="sidebar">
+      <h2>Popular Music</h2>
+      <ul id="popular-music" class="scrollable">
+        <li class="song-item">
+          <img src="HarryStyles.jpg" alt="Watermelon Sugar High" data-song="Watermelon Sugar.mp3">
+          <div class="song-info">
+            <p>Watermelon Sugar High</p>
+            <span>Harry Styles</span>
+          </div>
+        </li>
+        <li class="song-item">
+          <img src="Kendrick.jpg" alt="Not like us" data-song="Not Like Us.mp3">
+          <div class="song-info">
+            <p>Not like us</p>
+            <span>Kendrick Lamar</span>
+          </div>
+        </li>
+        <li class="song-item">
+            <img src="ColdPlay.jpg" alt="Paradise" data-song="Coldplay - Paradise.mp3" >
+            <div class="song-info">
+              <p>Paradise</p>
+              <span>Cold Play</span>
+            </div>
+          </li>
+          
+    <li class="song-item">
+        <img src="Taylor Swift.jpg" alt="Evermore" data-song="evermore (Official Lyric Video) ft. Bon Iver.mp3">
+        <div class="song-info">
+          <p>Evermore</p>
+          <span>Taylor Swift</span>
+        </div>
+      </li>
+      <li class="song-item">
+        <img src="ryan.jpg" alt="I'm Just Ken" data-song="I'm Just Ken (From Barbie The Album).mp3">
+        <div class="song-info">
+          <p>I'm Just Ken</p>
+          <span>Ryan Gosling</span>
+        </div>
+      </li>
+      <li class="song-item">
+        <img src="OliviaRodrigo.png" alt="good 4 u" data-song="Olivia Rodrigo - good 4 u.mp3">
+        <div class="song-info">
+          <p>good 4 u</p>
+          <span>Olivia Rodrigo</span>
+        </div>
+      </li>
+      <li class="song-item">
+        <img src="GlassAnimals.jpg" alt="Heatwaves" data-song="Glass Animals - Heat Waves.mp3">
+        <div class="song-info">
+          <p>Heatwaves</p>
+          <span>Glass Animals</span>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<div class="sidebar">
+  <h2>Popular Artists</h2>
+  <ul id="popular-artists" class="scrollable">
+    <li class="artist-item">
+      <img src="ts.jpg" alt="Taylor Swift" />
+      <p>Taylor Swift</p>
+    </li>
+    <li class="artist-item">
+      <img src="bad.jpg" alt="Bad Bunny" />
+      <p>Bad Bunny</p>
+    </li>
+    <li class="artist-item">
+      <img src="ld.jpg" alt="Lana Del Ray" />
+      <p>Lana Del Ray</p>
+    </li>
+    <li class="artist-item">
+      <img src="drake.jpg" alt="Drake" />
+      <p>Drake</p>
+    </li>
+    <li class="artist-item">
+      <img src="weeknd.jpg" alt="The Weeknd" />
+      <p>The Weeknd</p>
+    </li>
+    <li class="artist-item">
+      <img src="hs.jpg" alt="Harry Styles" />
+      <p>Harry Styles</p>
+    </li>
+  </ul>
+</div>
+<div class="sidebar">
+  <h2>Playlists</h2>
+<ul id="playlists" class="scrollable">
+<li class="playlist-item">
+  <img src="play1.jpg" alt="Playlist 1"/>
+  <p>Playlist 1</p>
+</li>
+<li class="playlist-item">
+  <img src="play2.jpg" alt="Playlist 2"/>
+  <p>Playlist 2</p>
+</li>
+<li class="playlist-item">
+  <img src="play3.jpg" alt="Playlist 3"/>
+  <p>Playlist 3</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    
+      <div id="player-container">
+    <audio id="audio-player" controls preload="none"></audio>
+      </div>
+    
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="songplayer.js"></script>
+    </body>
+
+</html>
